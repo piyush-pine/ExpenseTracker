@@ -37,7 +37,7 @@ The application follows a two-tier architecture:
 ## Installation & Setup
 
 1. **Clone the repository:**
-[git clone https://github.com/you/expense-tracker.git](https://github.com/piyush-pine/ExpenseTracker.git)
+'''[git clone https://github.com/you/expense-tracker.git](https://github.com/piyush-pine/ExpenseTracker.git)'''
 
 2. **Database Setup:**
 - Import the provided SQL schema into MySQL.
