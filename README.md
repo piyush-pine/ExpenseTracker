@@ -1,50 +1,64 @@
 # Expense Tracker
 
-**Expense Tracker** is a user-friendly application designed to help you efficiently manage your personal or shared expenses. Track your spending, categorize transactions, and gain insights into your financial habits—all in one place.
+Expense Tracker is a robust web application designed to help users efficiently manage and analyze their personal or shared expenses. Built with a modular architecture, it supports secure authentication, real-time data analytics, and collaborative expense management.
 
-## Features
+## Architecture Overview
 
-- **Add, edit, and delete expenses** with ease
-- **Categorize expenses** for better organization
-- **View expense summaries** by day, week, or month
-- **Collaborative mode**: Share and manage expenses with others
-- **User authentication** for secure access
-- **Data persistence** using MySQL
+- **Frontend:** JSP, HTML5, CSS3
+- **Backend:** Java Servlets
+- **Database:** MySQL
+- **Build Tool:** Maven
+- **Server:** Apache Tomcat
 
-## Technologies Used
+The application follows a two-tier architecture:
+- **Presentation Layer:** User interface for input, visualization, and reporting
+- **Data Layer:** MySQL database for persistent storage of users, transactions, and categories[5][11]
 
-- **Java** (Core logic)
-- **JSP & Servlet** (Web interface)
-- **MySQL** (Database)
-- **Apache NetBeans** (Development)
-- **Maven** (Build automation)
-- **Tomcat** (Server)
+## Core Features
 
-## Getting Started
+- **User Authentication:** Secure login and registration
+- **Expense Management:** Add, edit, and delete expenses with details (amount, category, date, description)
+- **Income Tracking:** Log and categorize income sources
+- **Categorization:** Organize transactions by customizable categories
+- **Analytics & Reporting:** Visualize expenses with charts and generate monthly/yearly reports
+- **Collaboration:** Share expenses with friends or groups, split bills, and track lent/owed amounts[3]
+- **Export:** Download reports in Excel or PDF format for offline use[3]
+- **Offline Access:** Core features available without internet connectivity[5]
+- **Responsive UI:** Works across desktop and mobile browsers
+
+## System Requirements
+
+- Java 11 or higher
+- Apache Tomcat 9+
+- MySQL 5.7+
+- Maven 3.6+
+- Modern web browser
+
+## Installation & Setup
 
 1. **Clone the repository:**
-git clone https://github.com/your-username/expense-tracker.git
-2. **Set up the database:**  
-Import the provided SQL script into your MySQL server.
+[git clone https://github.com/you/expense-tracker.git](https://github.com/piyush-pine/ExpenseTracker.git)
 
-3. **Configure database credentials:**  
-Update your `db.properties` or configuration file with your MySQL username and password.
+2. **Database Setup:**
+- Import the provided SQL schema into MySQL.
+- Update `db.properties` with your database credentials.
 
-4. **Build and deploy:**  
-Use Maven to build the project and deploy it on your Tomcat server.
+3. **Build the project:**
 
-## Screenshots
+4. **Deploy to Tomcat:**
+- Copy the generated `.war` file to the Tomcat `webapps` directory.
+- Start Tomcat and access the app at `http://localhost:8080/expense-tracker/`
 
-_Add screenshots of your app here to showcase the interface._
+## Contribution
 
-## Contributing
-
-Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
+- Fork the repository and submit pull requests for new features or bug fixes.
+- Please follow the code style guidelines and write unit tests for new modules.
 
 ## License
 
-This project is licensed under the MIT License.
+MIT License
 
 ---
 
-**Start tracking your expenses and take control of your finances today!**
+For questions or support, open an issue or contact the maintainer.
+
